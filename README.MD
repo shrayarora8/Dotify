@@ -7,5 +7,5 @@ provides the ability to edit the user's username.
 
 Extra credit list: Did not ttempt any extra credit.
 
-Photo: ![Proof that it is working]("https://github.com/shrayarora8/Dotify/tree/hw1/app/src/main/res/drawable-v24/phone.jpg")
+Photo: ![Proof that it is working](https://github.com/shrayarora8/Dotify/tree/hw1/app/src/main/res/drawable-v24/phone.jpg)
 
