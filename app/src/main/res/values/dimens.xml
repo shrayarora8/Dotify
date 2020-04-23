@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="elevation_mp">5dp</dimen>
+    <dimen name="padding_twelve">12dp</dimen>
+    <dimen name="dp_zero">0dp</dimen>
+</resources>

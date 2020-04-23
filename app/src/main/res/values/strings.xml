@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Dotify</string>
+    <string name="dispSong">%s - %s</string>
 </resources>

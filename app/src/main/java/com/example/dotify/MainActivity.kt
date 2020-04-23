@@ -8,6 +8,10 @@ import androidx.core.content.ContextCompat
 import org.w3c.dom.Text
 import kotlin.random.Random
 import android.graphics.Color
+import com.ericchee.songdataprovider.Song
+import com.example.dotify.SongListActivity.Companion.SONG_KEY
+import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.song_list.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,6 +20,13 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val currSong = intent.getParcelableExtra<Song>(SONG_KEY)
+        if(currSong != null) {
+            tVName.text = currSong.title
+            tVArtist.text = currSong.artist
+            img.setImageResource(currSong.largeImageID)
+        }
 
         val numPlays = findViewById<TextView>(R.id.tvPlays)
         numPlays.text = "$randomNumber plays"
