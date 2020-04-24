@@ -8,8 +8,8 @@ our app a little more complex that includes a secondary activity thst utilizes a
 
 Extra credit list: Did not ttempt any extra credit.
 
-Photo: ![Proof that it is working](https://github.com/shrayarora8/Dotify/tree/hw2/app/src/main/res/drawable-v24/hw2p1.jpg)
+Photo: ![Proof that it is working](https://github.com/shrayarora8/Dotify/tree/hw2/app/src/main/res/drawable-v24/hw2p2.jpg)
 
-![Proof that it is working pt.2](https://github.com/shrayarora8/Dotify/tree/hw2/app/src/main/res/drawable-v24/hw2p2.jpg)
+![Proof that it is working pt.2](https://github.com/shrayarora8/Dotify/tree/hw2/app/src/main/res/drawable-v24/hw2p1.jpg)
 
 
