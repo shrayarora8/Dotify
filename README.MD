@@ -1,4 +1,4 @@
-# HW1 - RecyclerView & Multiple Activities
+# HW2 - RecyclerView & Multiple Activities
 Name: Shray Arora
 
 App description: Dotify is a simple replica of the the famous music app spotify and gave us a beginner introduction 
