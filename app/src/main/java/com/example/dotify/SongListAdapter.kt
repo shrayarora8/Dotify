@@ -6,10 +6,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.ericchee.songdataprovider.Song
 
-class SongListAdapter(songList: List<Song>, context: Context): RecyclerView.Adapter<SongListAdapter.SongView>() {
+class SongListAdapter(songList: List<Song>): RecyclerView.Adapter<SongListAdapter.SongView>() {
     private var songList: List<Song> = songList.toList()
     var songClickListener: ((song: Song) -> Unit?)? = null
 
@@ -23,6 +24,13 @@ class SongListAdapter(songList: List<Song>, context: Context): RecyclerView.Adap
     override fun onBindViewHolder(holder: SongView, position: Int) {
         val song = songList[position]
         holder.bind(song)
+    }
+
+    fun change(shuffleSongs : List<Song>) {
+        val callback = SongDiffCallback(songList, shuffleSongs)
+        val diffResult = DiffUtil.calculateDiff(callback)
+        diffResult.dispatchUpdatesTo(this)
+        songList = shuffleSongs
     }
 
     inner class SongView(itemView: View): RecyclerView.ViewHolder(itemView) {
